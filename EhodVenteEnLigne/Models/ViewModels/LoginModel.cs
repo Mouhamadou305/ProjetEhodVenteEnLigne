@@ -1,6 +1,8 @@
 ﻿using EhodBoutiqueEnLigne.Controllers;
 using Microsoft.Extensions.Localization;
 using System.ComponentModel.DataAnnotations;
+using EhodBoutiqueEnLigne.Models;
+using EhodVenteEnLigne.Resources.Models;
 
 namespace EhodBoutiqueEnLigne.Models.ViewModels
 {
@@ -16,10 +18,10 @@ namespace EhodBoutiqueEnLigne.Models.ViewModels
         public LoginModel()
         {        }
 
-        [Required(ErrorMessage ="MissingLoginName")]
+        [Required(ErrorMessageResourceName ="MissingLoginName", ErrorMessageResourceType = typeof(Login))]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "MissingLoginPassword")]
+        [Required(ErrorMessageResourceName = "MissingLoginPassword", ErrorMessageResourceType = typeof(Login))]
         public string Password { get; set; }
 
         public string ReturnUrl { get; set; } = "/";
