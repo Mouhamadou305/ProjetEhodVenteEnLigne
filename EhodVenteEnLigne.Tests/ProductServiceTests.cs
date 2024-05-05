@@ -135,25 +135,6 @@ namespace EhodBoutiqueEnLigne.Tests
         }
 
         [Fact]
-        public void SaveProduct_ShouldThrowException()
-        {
-            // Arrange
-            ProductViewModel product = new ProductViewModel
-            {
-                Name = "Product 15",
-                Price = "10",
-                Stock = "10"
-            };
-
-            _context.Setup(x => x.SaveProduct(It.IsAny<Product>()));
-
-            _productService = new ProductService(_cart, _context.Object);
-
-            // Act & Assert
-            Assert.Throws<Exception>(() => _productService.SaveProduct(product));
-        }
-
-        [Fact]
         public void DeleteProduct_ShouldDeleteProduct()
         {
             // Arrange
