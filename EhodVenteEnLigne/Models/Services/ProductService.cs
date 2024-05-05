@@ -25,6 +25,11 @@ namespace EhodBoutiqueEnLigne.Models.Services
             _orderRepository = orderRepository;
             _localizer = localizer;
         }
+        public ProductService(ICart cart, IProductRepository productRepository)
+        {
+            _cart = cart;
+            _productRepository = productRepository;
+        }
         public List<ProductViewModel> GetAllProductsViewModel()
         {
              
