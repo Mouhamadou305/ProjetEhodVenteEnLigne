@@ -117,25 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MissingName" xml:space="preserve">
-    <value>Dougalal touram</value>
+  <data name="CreatProductTitle" xml:space="preserve">
+    <value>Deffar produit</value>
   </data>
-  <data name="MissingPrice" xml:space="preserve">
-    <value>Dougalal nieugeum</value>
+  <data name="Description" xml:space="preserve">
+    <value>Description bi</value>
   </data>
-  <data name="MissingStock" xml:space="preserve">
-    <value>Dougal stock bi noumou toll</value>
+  <data name="Details" xml:space="preserve">
+    <value>Details yii</value>
   </data>
-  <data name="PriceNotANumber" xml:space="preserve">
-    <value>Nieug bi araf la wara done</value>
+  <data name="Name" xml:space="preserve">
+    <value>Tour bi</value>
   </data>
-  <data name="PriceNotGreaterThanZero" xml:space="preserve">
-    <value>Nieug bi warr na eupp 0</value>
+  <data name="OK" xml:space="preserve">
+    <value>Bakhna</value>
   </data>
-  <data name="StockNotAnInteger" xml:space="preserve">
-    <value>Nieug bi entier la wara done</value>
+  <data name="Price" xml:space="preserve">
+    <value>Ndieug bi</value>
   </data>
-  <data name="StockNotGreaterThanZero" xml:space="preserve">
-    <value>Stock bi warr na eup 0</value>
+  <data name="Stock" xml:space="preserve">
+    <value>Stock bi</value>
   </data>
 </root>

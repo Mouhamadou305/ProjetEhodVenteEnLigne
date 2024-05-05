@@ -117,25 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MissingName" xml:space="preserve">
-    <value>Dougalal touram</value>
+  <data name="ErrorMissingName" xml:space="preserve">
+    <value>Please enter a name</value>
   </data>
-  <data name="MissingPrice" xml:space="preserve">
-    <value>Dougalal nieugeum</value>
+  <data name="ErrorMissingPrice" xml:space="preserve">
+    <value>Please enter a price value</value>
   </data>
-  <data name="MissingStock" xml:space="preserve">
-    <value>Dougal stock bi noumou toll</value>
+  <data name="ErrorMissingStock" xml:space="preserve">
+    <value>Please enter a stock value</value>
   </data>
-  <data name="PriceNotANumber" xml:space="preserve">
-    <value>Nieug bi araf la wara done</value>
+  <data name="ErrorPriceValue" xml:space="preserve">
+    <value>The price value must be a number greater than zero</value>
   </data>
-  <data name="PriceNotGreaterThanZero" xml:space="preserve">
-    <value>Nieug bi warr na eupp 0</value>
-  </data>
-  <data name="StockNotAnInteger" xml:space="preserve">
-    <value>Nieug bi entier la wara done</value>
-  </data>
-  <data name="StockNotGreaterThanZero" xml:space="preserve">
-    <value>Stock bi warr na eup 0</value>
+  <data name="ErrorStockValue" xml:space="preserve">
+    <value>The stock value must be a number greater than zero</value>
   </data>
 </root>

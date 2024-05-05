@@ -117,25 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MissingName" xml:space="preserve">
-    <value>Dougalal touram</value>
+  <data name="Address" xml:space="preserve">
+    <value>Sa deukouway</value>
   </data>
-  <data name="MissingPrice" xml:space="preserve">
-    <value>Dougalal nieugeum</value>
+  <data name="City" xml:space="preserve">
+    <value>Deuk</value>
   </data>
-  <data name="MissingStock" xml:space="preserve">
-    <value>Dougal stock bi noumou toll</value>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Diekhal commande bi</value>
   </data>
-  <data name="PriceNotANumber" xml:space="preserve">
-    <value>Nieug bi araf la wara done</value>
+  <data name="Country" xml:space="preserve">
+    <value>Sa reew</value>
   </data>
-  <data name="PriceNotGreaterThanZero" xml:space="preserve">
-    <value>Nieug bi warr na eupp 0</value>
+  <data name="EnterDetails" xml:space="preserve">
+    <value>Niou ngui nieuw topato sa commande légui légui</value>
   </data>
-  <data name="StockNotAnInteger" xml:space="preserve">
-    <value>Nieug bi entier la wara done</value>
+  <data name="Location" xml:space="preserve">
+    <value>Sa localisation</value>
   </data>
-  <data name="StockNotGreaterThanZero" xml:space="preserve">
-    <value>Stock bi warr na eup 0</value>
+  <data name="Name" xml:space="preserve">
+    <value>Sa tourr</value>
+  </data>
+  <data name="OrderTitle" xml:space="preserve">
+    <value>Rempliral formulaire bi</value>
+  </data>
+  <data name="ShipSoon" xml:space="preserve">
+    <value>Sou parré rekk niou yonné la ko</value>
+  </data>
+  <data name="ShipTo" xml:space="preserve">
+    <value>Yonné ko </value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Code postal</value>
   </data>
 </root>

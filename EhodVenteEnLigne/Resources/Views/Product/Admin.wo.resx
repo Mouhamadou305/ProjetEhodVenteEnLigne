@@ -117,25 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MissingName" xml:space="preserve">
-    <value>Dougalal touram</value>
+  <data name="Administrator" xml:space="preserve">
+    <value>Seytoukat</value>
   </data>
-  <data name="MissingPrice" xml:space="preserve">
-    <value>Dougalal nieugeum</value>
+  <data name="Create" xml:space="preserve">
+    <value>Defar</value>
   </data>
-  <data name="MissingStock" xml:space="preserve">
-    <value>Dougal stock bi noumou toll</value>
+  <data name="Delete" xml:space="preserve">
+    <value>Dindi</value>
   </data>
-  <data name="PriceNotANumber" xml:space="preserve">
-    <value>Nieug bi araf la wara done</value>
+  <data name="Description" xml:space="preserve">
+    <value>Description bi</value>
   </data>
-  <data name="PriceNotGreaterThanZero" xml:space="preserve">
-    <value>Nieug bi warr na eupp 0</value>
+  <data name="Name" xml:space="preserve">
+    <value>Tourr bi</value>
   </data>
-  <data name="StockNotAnInteger" xml:space="preserve">
-    <value>Nieug bi entier la wara done</value>
+  <data name="Price" xml:space="preserve">
+    <value>Ndieug bi</value>
   </data>
-  <data name="StockNotGreaterThanZero" xml:space="preserve">
-    <value>Stock bi warr na eup 0</value>
+  <data name="ProductAdministrationModule" xml:space="preserve">
+    <value>Module seytou Marsandises yii</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details yi</value>
+    <comment>Details</comment>
   </data>
 </root>

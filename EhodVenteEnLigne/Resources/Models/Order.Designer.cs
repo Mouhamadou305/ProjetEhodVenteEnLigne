@@ -22,14 +22,14 @@ namespace EhodVenteEnLigne.Resources.Models {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resource {
+    public class Order {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal Order() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace EhodVenteEnLigne.Resources.Models {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EhodVenteEnLigne.Resources.Models.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EhodVenteEnLigne.Resources.Models.Order", typeof(Order).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,47 @@ namespace EhodVenteEnLigne.Resources.Models {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valeur.
+        ///   Recherche une chaîne localisée semblable à Please enter an address.
         /// </summary>
-        public static string Cle {
+        public static string ErrorMissingAddress {
             get {
-                return ResourceManager.GetString("Cle", resourceCulture);
+                return ResourceManager.GetString("ErrorMissingAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please enter a city name.
+        /// </summary>
+        public static string ErrorMissingCity {
+            get {
+                return ResourceManager.GetString("ErrorMissingCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please enter a country name.
+        /// </summary>
+        public static string ErrorMissingCountry {
+            get {
+                return ResourceManager.GetString("ErrorMissingCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please enter a name.
+        /// </summary>
+        public static string ErrorMissingName {
+            get {
+                return ResourceManager.GetString("ErrorMissingName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please enter the zip code.
+        /// </summary>
+        public static string ErrorMissingZipCode {
+            get {
+                return ResourceManager.GetString("ErrorMissingZipCode", resourceCulture);
             }
         }
     }
