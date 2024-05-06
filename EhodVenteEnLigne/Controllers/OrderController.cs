@@ -40,6 +40,7 @@ namespace EhodBoutiqueEnLigne.Controllers
             }
             else
             {
+                ModelState.AddModelError("", "Invalid informations");
                 return View(order);
             }
         }
