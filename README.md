@@ -8,26 +8,46 @@
 
 * Unit tests
 
-Comment j'ai implémenté les erreurs dans différentes langues en utilisant les Annotations de données :
+**Comment j'ai implémenté les erreurs dans différentes langues en utilisant les Annotations de données**
 
-Tout d'abord, j'ai dû créer les différents fichiers de ressources pour chaque page. Les fichiers de ressources contiennent un dictionnaire où chaque clé est le nom du message d'erreur et sa valeur correspondante est le message d'erreur dans la langue appropriée. Certains fichiers de ressources existaient déjà mais pas pour la page de connexion. J'ai créé les fichiers manquants Login.en.rex et Login.fr.resx. Mais un problème est survenu. L'outil PublicResXFileCodeGenerator n'a pas pu générer les classes correspondant à ces fichiers de ressources. Cela était dû aux noms des fichiers de ressources. Par exemple, pour la page de connexion, un fichier Login.resx devait être créé afin qu'une classe Login soit générée à partir de ce fichier de ressources. Les fichiers Login.en.resx et Login.fr.resx ne génèrent pas de classes à partir d'eux mais sont liés à la classe Login générée à partir de Login.resx.
-Deuxièmement, dans les View Models, nous utilisons des Annotations (Required, Pattern, ...) afin de spécifier les restrictions à appliquer aux attributs avec les messages d'erreur correspondants. Deux propriétés spéciales sont définies dans chaque annotation de données :
+* Tout d'abord, j'ai dû créer les différents fichiers de ressources pour chaque page. Les fichiers de ressources contiennent un dictionnaire où chaque clé est le nom du message d'erreur et sa valeur correspondante est le message d'erreur dans la langue appropriée. Certains fichiers de ressources existaient déjà mais pas pour la page de connexion. J'ai créé les fichiers manquants Login.en.rex et Login.fr.resx. Mais un problème est survenu. L'outil PublicResXFileCodeGenerator n'a pas pu générer les classes correspondant à ces fichiers de ressources. Cela était dû aux noms des fichiers de ressources. Par exemple, pour la page de connexion, un fichier Login.resx devait être créé afin qu'une classe Login soit générée à partir de ce fichier de ressources. Les fichiers Login.en.resx et Login.fr.resx ne génèrent pas de classes à partir d'eux mais sont liés à la classe Login générée à partir de Login.resx.
+  
+* Deuxièmement, dans les View Models, nous utilisons des Annotations (Required, Pattern, ...) afin de spécifier les restrictions à appliquer aux attributs avec les messages d'erreur correspondants. Deux propriétés spéciales sont définies dans chaque annotation de données :
 ErrorMessageResourceName : qui contient le nom du message d'erreur (il doit correspondre à une clé dans votre fichier de ressources)
 ErrorMessageResourceType : qui contient le type de ressource contenant le message d'erreur (il doit être le nom de la classe générée à partir de votre fichier de ressources)
-Troisièmement, nous devons ajouter le support des annotations de données de localisation dans la classe Program.cs :
+
+* Troisièmement, nous avons ajouté le support des annotations de données de localisation dans la classe Program.cs :
 services.AddDataAnnotationsLocalization();
-Internationalisation en Wolof :
+
+
+**Internationalisation en Wolof :**
+
+En plus des configurations de base permettant l'internationalisation (Dans Program.cs et le Localizer)
 
 J'ai ajouté Login.wo.resx
-J'ai ajouté Default.wo.resx
-J'ai modifié Default.cshtml
-J'ai modifié le Service de Langue
-J'ai ajouté LanguageViewModel.wo.resx
-Dans Order.cshtml, il fallait corriger des erreurs telles que :
-Le contrôleur qui traitait la requête, l'affichage des messages d'erreurs
-Il fallait aussi modifier OrderViewModel pour les annotations.
 
-La même chose pour créer un produit sauf pour ce qui est du contrôleur.
+J'ai ajouté Default.wo.resx
+
+J'ai modifié Default.cshtml
+
+J'ai modifié le Service de Langue
+
+J'ai ajouté LanguageViewModel.wo.resx
+
+J'ai ajouté les ressources en wolof correspondantes pour toutes celles en français et anglais.
+
+**Gestion des erreurs**
+
+Dans Order.cshtml, il fallait corriger des erreurs telles que :
+
+* Le contrôleur qui traitait la requête
+* l'affichage des messages d'erreurs
+* Il fallait aussi modifier OrderViewModel pour les annotations.
+
+La même chose a été fait pour créer un produit sauf pour ce qui est du contrôleur.
+
+**Unit Tests**
+J'ai utilisé la bibliothèque XUnit pour implémenter des tests pour Order et Product.
 
 Ce projet possède une base de données intégrée qui sera créée lorsque l’application sera exécutée pour la première fois. Pour la créer correctement, vous devez satisfaire aux prérequis ci-dessous et mettre à jour les chaînes de connexion pour qu’elles pointent vers le serveur MSSQL qui est exécuté sur votre PC en local.
 
