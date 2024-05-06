@@ -1,9 +1,12 @@
 # Projet Ehod Vente en Ligne
 
 **Liste des changements opérés :**
-**Affichage des erreurs liés aux champs
-**Internationalisation en Wolof
-**Unit tests
+
+* Affichage des erreurs liés aux champs
+
+* Internationalisation en Wolof
+
+* Unit tests
 
 Comment j'ai implémenté les erreurs dans différentes langues en utilisant les Annotations de données :
 
